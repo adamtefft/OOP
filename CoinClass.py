@@ -26,7 +26,9 @@ class Coin:
         if random.randint(0, 1) == 0:
             self.sideup = 'Heads'
         else:
-            self.sideup = 'Tails'
+            self.__sideup = 'Tails'
+            # the __ hides the attributes
+            # going forward, we always want to hide our attributes
 
     # toss is a mutator method which can change the value of an attribute
         # also known as a set method
