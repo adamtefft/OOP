@@ -1,15 +1,16 @@
 import InsectClass as I
 
-mosquito = I.Insect('mosquito', 2, 4)
-housefly = I.Insect('housefly', 2, 4)
+mosquito = I.Insect('bumblebee', 2, 4)
+housefly = I.Insect('housefly', 200, 400)
+# housefly and mosquito are objects of the class, Insect
 
-mosquito.flight_length()
-housefly.flight_length()
+print(mosquito.flight_length())
+print(housefly.flight_length())
 
-print(f"The {mosquito.get_name()} can fly up to {mosquito.get_miles()} miles")
-print(f"The {housefly.get_name()} can fly up to {housefly.get_miles()} miles")
+print(f"The {mosquito.get_name()} can fly up to {mosquito.get_flight()} miles")
+print(f"The {housefly.get_name()} can fly up to {housefly.get_flight()} miles")
 
-
+'''
 def main():
     my_insect = I.Insect()
 
@@ -19,3 +20,4 @@ def main():
 
 
 main()
+'''

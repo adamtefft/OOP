@@ -34,3 +34,5 @@ class BankAccount:
 
     def __str__(self):
         return 'The balance is $' + format(self.__balance, ',.2f')
+
+    # This string method alows you to let it return whatever you want
